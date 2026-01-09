@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    font-family: "Poppins", sans-serif;
+    font-family: "Times New Roman", serif;
     margin: 0 auto;
     max-width: 1120px;
     background: linear-gradient(150deg, #292929, #000);
@@ -25,7 +25,7 @@ body{
     text-decoration: underline;
     text-align: center;
     line-height: 55px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Times New Roman", serif;
     transition: 0.2s;
 }
 
@@ -34,7 +34,31 @@ body{
     border: 2px solid #0d976d;
 }
 
-.cabecalho .menu li a{
+.cabecalho .menu ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cabecalho .menu button {
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    transition: 0.3s;
+    background: none;
+    color: white;
+    font-family: 'Times New Roman', serif;
+    cursor: pointer;
+    border: none;
+}
+
+.cabecalho .menu button:hover {
+    color: #0d976d;
+    border: 2px solid #0d976d;
+    border-radius: 50px;
+}
+
+.cabecalho .menu li a {
     font-size: 20px;
     text-transform: capitalize;
     padding: 10px 20px;
@@ -65,15 +89,15 @@ body{
 }
 
 .home .informacoes h1{
-    font-family: "Raleway", sans-serif;
+    font-family: "Times New Roman", serif;
     color: #0d976d;
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
 .home .informacoes p{
-    font-family: "Raleway", sans-serif;
-    font-size: 24px;
+    font-family: "Times New Roman", serif;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
@@ -99,14 +123,15 @@ body{
     transform: scale(1.1);
 }
 
-.home .container-foto .foto{
+.home .container-foto {
+    position: relative;
     max-width: 450px;
-    border-radius: 50%;
 }
 
 .home .container-foto img{
     width: 100%;
-    border-radius: 50%;
+    border-radius: 0;
+    background: transparent;
 }
 
 /* .home .foto.sombra-interna{

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
+    <title data-pt="Portifólio" data-en="Portfolio"></title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -36,35 +36,38 @@
         </a>
 
         <nav class="menu">
+            
             <ul>
                 <li>
-                    <a href="#projetos">Meus projetos</a>
+                    <a href="#projetos" data-pt="Meus Projetos" data-en="My Projects"></a>
+                </li>
+                <li>
+                    <button id="toggle-language">Mudar para Inglês</button>
                 </li>
             </ul>
         </nav>
     </header>
     <section class="home">
         <div class="informacoes">
-            <h1>Olá! Sou Mateus Lecchi</h1>
-            <p>Desenvolvedor FullStack em formação apaixonado por programar.</p>
-            <p>Estou sempre em busca de novos aprendizados e desafios para meu crescimento pessoal e profissional.</p>
+            <h1 data-pt="Olá! Sou Mateus Lecchi" data-en="Hello! I'm Mateus Lecchi"></h1>
+            <p data-pt="Desenvolvedor FullStack em formação apaixonado por programar." data-en="Fullstack developer in training passionate about programming."></p>
+            <p data-pt="Estou sempre em busca de novos aprendizados e desafios para meu crescimento pessoal e profissional." data-en="I am always looking for new learning and challenges for my professional and personal career."></p>
 
             <ul class="redes-sociais">
                 <li>
-                    <a href="https://www.linkedin.com/in/mateus-lecchi-9485a5257/" title="Ir para o linkedin"
-                        target="_blank">
+                    <a href="https://www.linkedin.com/in/mateus-lecchi-9485a5257/" title="Ir para o linkedin" data-pt="Ir para o linkedin" data-en="Go to LinkedIn" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://github.com/MateusLecchiDev" title="Ir para o github" target="_blank">
+                    <a href="https://github.com/MateusLecchiDev" title="Ir para o github" data-pt="Ir para o github" data-en="Go to GitHub" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=mateusrlecchi@gmail.com" title="Ir para o e-mail" target="_blank">
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=mateusrlecchi@gmail.com"  title="Ir para o e-mail" data-pt="Ir para o e-mail" data-en="Go to Email" target="_blank">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </li>
@@ -72,29 +75,33 @@
         </div>
 
         <div class="container-foto">
-            <div class="foto sombra-interna">
-                <img src="./src/images/perfil2.png" alt="imagem perfil portfólio">
-            </div>
+            <img src="./src/images/perfil2-semfundo.png" alt="imagem perfil portfólio">
+            <!-- <div class="foto sombra-interna">
+                <img src="./src/images/perfil2-semfundo.png" alt="imagem perfil portfólio">
+            </div> -->
         </div>
         </section>
         <section class="projetos" id="projetos">
-            <h2 class="titulo">Meus Projetos</h2>
+            <h2 class="titulo" data-pt="Meus Projetos" data-en="My Projects"></h2>
 
         <div class="container-projetos">
             <article class="projeto ativo">
                 <img src="./src/images/screenapp.png" alt="Nome Alternativo">
                 <hr>
                 <h3>Blazor App</h3>
-                <p>Projeto desenvolvido com Blazor Server, utilizando Docker Compose para execução da aplicação e do banco de dados SQL Server.
+                <p data-pt="Projeto desenvolvido com Blazor Server, utilizando Docker Compose para execução da aplicação e do banco de dados SQL Server.
                    O projeto foi hospedado em uma instância EC2 na AWS, com foco em automação e controle de custos, permitindo iniciar o ambiente sob demanda. 
-                   Esse projeto demonstra integração entre backend, banco de dados, containerização e deploy em nuvem.
+                   Esse projeto demonstra integração entre backend, banco de dados, containerização e deploy em nuvem."
+                   data-en="Project developed with Blazor Server, using Docker Compose to run the application and SQL Server database. 
+                   The project was hosted on an EC2 instance on AWS, focusing on automation and cost control, allowing the environment to be started on demand.
+                   This project demonstrates the integration between backend, database, containerization, and cloud deployment.">
                 </p>
                 <hr>
-                <a href="http://3.139.130.112:8081" target="_blank">Ver Projeto</a>
+                <a href="http://3.139.130.112:8081" target="_blank" data-pt="Ver Projeto" data-en="View Project"></a>
             </article>
         </div>
 
-            <button class="btn-mostrar-projetos">Mostrar mais</button>
+            <button class="btn-mostrar-projetos" data-pt="Mostrar mais" data-en="Show more"></button>
         </section>
 
         <script src="./src/JS/index.js"></script>
